@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>task2</title>
+<script>
+    function power(){
+        num1 = document.getElementById("firstNum").value;
+        num2 = document.getElementById("secondNum").value;
+        document.getElementById("result").innerHTML = Math.pow(num1, num2);
+    }
+    </script>
+</head>
+<body>
+
+<h1>TASK2</h1>
+
+    <div style="border: 2px solid #333">
+   
+    <p><input type="number" id="firstNum" name="firstNum"> first number</p>
+    
+    <p><input type="number" id="secondNum" name="secondNum"> Second number</p>
+    </div>
+    
+    <button onclick="power()">Display Result</button></br></br>
+    
+   
+    <span type="number" id="result" name="result"></span>
+  
+  
+</body>
+</html>
