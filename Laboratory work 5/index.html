@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<style>
+
+/* #wave {
+  position: relative;
+  height: 70px;
+  width: 590px;
+  background: #e0efe3;
+}
+#wave:before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 340px;
+  height: 80px;
+  background-color: white;
+  right: -5px;
+  top: 40px;
+}
+#wave:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 300px;
+  height: 70px;
+  background-color: #e0efe3;
+  left: 0;
+  top: 27px;
+} */
+
+#A {
+  background: #0074D9;
+}
+
+#B {
+  background: #7FDBFF;
+}
+
+#A::after {
+  content: "";
+  position: relative;
+  left: -3rem;
+  /* padding * -1 */
+  top: calc( 3rem - 4rem / 2);
+  /* padding - height/2 */
+  float: left;
+  display: block;
+  height: 4rem;
+  width: 100vw;
+  background: hsla(0, 0%, 100%, 0.5);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 70 500 60' preserveAspectRatio='none'%3E%3Crect x='0' y='0' width='500' height='500' style='stroke: none; fill: %237FDBFF;' /%3E%3Cpath d='M0,100 C150,200 350,0 500,100 L500,00 L0,0 Z' style='stroke: none; fill: %230074D9;'%3E%3C/path%3E%3C/svg%3E");
+  background-size: 100% 100%;
+}
+
+
+/** Cosmetics **/
+
+* {
+  margin: 0;
+}
+
+#A,
+#B {
+  padding: 3rem;
+}
+
+div {
+  font-family: monospace;
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+
+#A {
+  color: white;
+}
+</style>
+</head>
+<body>
+
+   
+
+    <!-- <div id="wave"></div> -->
+
+    <div id="A">
+    </div>
+    
+    <div id="B" class="wavy"></div>
+    
+    </body>
+    </html>
